@@ -1,0 +1,244 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.hero-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hero-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+.hero-text h1 {
+	margin-bottom: 5px;
+	text-shadow: 3px 3px 5px #000;
+	color: #ddd;
+}
+
+.hero-text span {
+	margin-left: 10px;
+	text-transform: uppercase;
+	color: rgb(11, 124, 36);
+}
+
+.section-title {
+	margin: 20px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+section {
+	scroll-margin-top: 60px;
+}
+
+/* nawigacja */
+nav {
+	position: sticky;
+	top: 0;
+	height: 60px;
+	line-height: 60px;
+	background-color: #ddd;
+	text-align: center;
+	z-index: 10;
+}
+
+.burger-icon {
+	display: block;
+	margin-left: auto;
+	padding: 0 30px;
+	line-height: 60px;
+	font-size: 30px;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.nav-items {
+	display: none;
+}
+
+/* header */
+
+.header {
+	position: relative;
+	background-image: url(../img/island-5783440_640.jpg);
+	height: 330px;
+	background-size: cover;
+	background-position: center;
+}
+
+/* main */
+
+main {
+	margin: 60px 0;
+}
+
+/* onas */
+.about-us-info {
+	margin-bottom: 10px;
+	padding: 0 20px;
+}
+
+/* produkty */
+.products {
+	margin: 60px auto;
+}
+
+.product {
+	position: relative;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+
+.product:hover h3 {
+	transform: scale(1.4);
+}
+
+.products h3 {
+	text-transform: uppercase;
+	transition: transform 0.3s;
+}
+
+.first-products {
+	background-image: url(../img/compass-4891499_640.jpg);
+}
+
+.second-products {
+	background-image: url(../img/map-4152197_640.jpg);
+}
+
+.third-products {
+	background-image: url(../img/travel-5219496_640.jpg);
+}
+
+.fourth-products {
+	background-image: url(../img/family-6398107_640.jpg);
+}
+
+/* kontakt */
+
+.contact {
+	text-align: center;
+}
+
+.contact h3 {
+	text-transform: uppercase;
+	margin: 20px 0 5px;
+}
+
+.fas {
+	margin-right: 7px;
+}
+
+/* footer */
+
+footer {
+	text-align: center;
+	padding: 30px 10px;
+	background-color: #ddd;
+}
+
+@media (min-width: 768px) {
+	.burger-icon {
+		display: none;
+	}
+
+	.nav-items {
+		display: block;
+	}
+
+	.nav-items a {
+		padding: 0 30px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #333;
+		transition: color 0.3s;
+	}
+
+	.nav-items a:hover {
+		color: rgb(11, 124, 36);
+	}
+
+	.header {
+		background-image: url(../img/island-5783440_1920.jpg);
+		height: 400px;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.hero-text h1 {
+		font-size: 36px;
+	}
+
+	.hero-text p {
+		font-size: 18px;
+	}
+
+	.products h3 {
+		font-size: 24px;
+	}
+
+	.first-products {
+		background-image: url(../img/compass-4891499_1920.jpg);
+	}
+
+	.second-products {
+		background-image: url(../img/map-4152197_1920.jpg);
+	}
+
+	.third-products {
+		background-image: url(../img/travel-5219496_1920.jpg);
+	}
+
+	.fourth-products {
+		background-image: url(../img/family-6398107_1920.jpg);
+	}
+}
+
+@media (min-width: 992px) {
+	.products-box {
+		font-size: 0;
+	}
+
+	.product {
+		display: inline-block;
+		width: 50%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.hero-text h1 {
+		font-size: 42px;
+	}
+
+	.hero-text p {
+		font-size: 20px;
+	}
+}
